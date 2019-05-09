@@ -1,0 +1,30 @@
+body *
+body {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box; 
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(20, 80px);
+    grid-template-rows: repeat(11, 80px);
+    grid-template-areas: "canvas";
+}
+
+Canvas {
+    grid-area: canvas;
+    background-color: grey;
+    border: 1px solid #000000;  
+
+    > .cell {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+    }
+}
+
