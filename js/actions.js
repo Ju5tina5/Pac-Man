@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Clear the canvas to draw the next part of the animation
       context.clearRect(0, 0, canvas.width, canvas.height);
        x += 5;
-       //y -= 5;
+       y -= 5;
        if (x < 0 - r) {
         x = canvas.width + r;
         } else if (x > canvas.width + r) {
